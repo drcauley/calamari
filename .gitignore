@@ -1,0 +1,6 @@
+config.py
+*.un~
+*.swp
+*.pyc
+app.db
+env
