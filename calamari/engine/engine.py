@@ -4,22 +4,24 @@ engine/engine.py
 Defines the main logic of the bot, while IO is handled by the interfaces.
 """
 from threading import Thread
-from werkzeug.utils import import_string
+from config import Config, get_root_path
 
 class CalamariEngine():
     """
     The brains of the operation.  Register interfaces with the engine and it
     will do all of the heavy lifting
     """
-    def __init__( self, prefix = "." ):
+    def __init__( self, import_name, prefix = "." ):
         """
         Initialize the list of commands / interfaces, the config dictionary, and
         set the command prefix
         """
+        self.import_name = import_name
+        self.root_path = get_root_path( import_name )
+        self.config = Config( self.root_path )
         self.prefix = prefix
         self.commands = {}
         self.null_cmd = None
-        self.config = {}
         self.interfaces = []
 
     def register_interface( self, interface, threads = 5 ):
