@@ -81,16 +81,6 @@ class CalamariEngine():
             return func
         return wrap
 
-    def config_from_object( self, obj_string ):
-        """
-        Code blatantly stolen from flask so I can configure the bot in the same
-        way because I like it.
-        """
-        obj = import_string( obj_string )
-        for key in dir( obj ):
-            if key.isupper():
-                self.config[key] = getattr(obj,key)
-
     def run( self ):
         """
         Start listening on all the interfaces
