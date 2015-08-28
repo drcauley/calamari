@@ -20,7 +20,7 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='1.0.0',
+    version='1.0.1',
 
     description='A simple, easy, and extensible chat bot',
     long_description=long_description,
@@ -30,7 +30,7 @@ setup(
 
     # Author details
     author='Danial Ray Cauley',
-    author_email='girdot@gmai.com',
+    author_email='girdot@gmail.com',
 
     # Choose your license
     license='MIT',
