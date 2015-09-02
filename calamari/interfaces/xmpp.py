@@ -47,7 +47,7 @@ class CalamariXMPP( CalamariInterface ):
         handler
         """
         # TODO: Actually define what constitutes a message somewhere
-        self._inq.put( {'message':msg['body'], 'user':msg['mucnick']} )
+        self.process( {'message':msg['body'], 'user':msg['mucnick']} )
 
     def write_output( self, msg ):
         """

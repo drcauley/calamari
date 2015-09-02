@@ -43,6 +43,12 @@ class CalamariInterface(object):
         """
         self._outq.put( msg )
 
+    def process( self, msg ):
+        """
+        Put a message on the input queue.  Essentially, process a message
+        """
+        self._inq.put( msg )
+
     def output_handler( self ):
         """
         This will be spun up in a separate thread.  Simply consumes messages
@@ -66,3 +72,6 @@ class CalamariInterface(object):
         listening
         """
         pass
+
+from calamari.interfaces.xmpp import CalamariXMPP
+from calamari.interfaces.irc_interface import CalamariIRC
