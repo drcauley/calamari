@@ -20,7 +20,7 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='1.0.2',
+    version='1.0.3',
 
     description='A simple, easy, and extensible chat bot',
     long_description=long_description,
@@ -55,7 +55,7 @@ setup(
     ],
 
     # What does your project relate to?
-    keywords='chat bot jabber xmpp',
+    keywords='chat bot jabber xmpp irc',
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().

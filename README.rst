@@ -23,8 +23,8 @@ so:
     bot = CalamariEngine( __name__, prefix = "#" )
 
 Now that we have the engine initialized, we need to initialize one or more
-interfaces.  The only interface available right now is XMPP, so we'll use that
-as an example:
+interfaces.  Right now there are two interfaces available: XMPP and IRC.  We'll
+start with XMPP as an example: 
 
     xmpp_interface = CalamariXMPP( "user@chatserver.com/resource", "mypassword",
         "muc_room_name, "bot_nick" )
