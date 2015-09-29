@@ -83,7 +83,7 @@ class CalamariIRC( CalamariInterface ):
         """
         writes message to the irc channel
         """
-        self.bot_instance.threadSafeMsg( "#" + self.channel, msg['message'] )
+        self.bot_instance.threadSafeMsg("#" + self.channel, str(msg['message']))
 
     def run( self ):
         """
