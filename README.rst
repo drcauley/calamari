@@ -3,6 +3,9 @@ Calamari.py - An easy, extensible chat bot
 Installation:
     pip install calamari
 
+There is an example bot in "example.py", so be sure to check that out if you
+need any help.
+
 Alright, let me keep this short and sweet.  Just a fore-warning, I drew a lot of
 inspiration from flask, even going so far as lifting the configuration class
 completely.  This was on purpose, because I am lazy as hell and a pretty big fan
